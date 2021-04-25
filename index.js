@@ -23,7 +23,7 @@ addEventListener("scheduled", event => {
 // - scheduledTime returns the time the event was scheduled (as unix epoch)
 /**
  * 
- * @param {{cron: string, type: string, scheduledTime: number}} event
+ * @param { {cron: string, type: string, scheduledTime: number} } event
  */
 async function handleScheduled(event) {
     return new Response("OK")
