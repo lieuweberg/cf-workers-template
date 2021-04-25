@@ -1,0 +1,16 @@
+name = "PROJECT NAME"
+# Can be found on the Workers page or simply copied from the url of the cloudflare dashboard
+account_id = ""
+
+type = "javascript"
+workers_dev = true
+
+# In case you want to deploy to a custom domain instead of workers.dev
+[env.production]
+# Can be found on the overview page of a domain added to Cloudflare
+zone_id = ""
+# See https://developers.cloudflare.com/workers/platform/routes
+route = ""
+
+[triggers]
+crons = []
