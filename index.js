@@ -20,7 +20,7 @@ addEventListener("scheduled", event => {
 // There is no type for the cron event, but it has only three properties.
 // - cron returns the cron trigger value (e.g. */30 * * * *)
 // - type always returns 'scheduled'
-// - scheduledTime returns the time the event was scheduled (as unix epoch)
+// - scheduledTime returns the time the event was scheduled (as unix epoch, in milliseconds)
 /**
  * 
  * @param { {cron: string, type: string, scheduledTime: number} } event
